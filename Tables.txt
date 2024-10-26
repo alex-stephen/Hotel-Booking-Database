@@ -1,0 +1,10 @@
+<?php
+
+CREATE TABLE RES (rid INT,id INT,room INT,guest INT,check_in VARCHAR(50),check_out VARCHAR(50),status VARCHAR(20)); 
+
+CREATE TABLE GUEST (guest_num INT AUTO_INCREMENT PRIMARY KEY, id INT, name varchar(100), dob VARCHAR(50), email VARCHAR(50), phone VARCHAR(50));
+
+CREATE TABLE ROOM (res_id INT, room_num INT, price INT, room_type varchar(20), vacancy VARCHAR(30)); 
+
+CREATE TABLE PAYMENT (payment_number INT AUTO_INCREMENT PRIMARY KEY, status VARCHAR(30), method VARCHAR(20), resid INT); 
+?>
